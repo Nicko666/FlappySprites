@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2a622c6292ffb4db2090629faa60f8, type: 3}
+  m_Name: EveningValley
+  m_EditorClassIdentifier: 
+  sky: {fileID: 3286163911610860551, guid: bd73a569a3772a64cb4a52f7a8230f4f, type: 3}
+  farBackground: {fileID: 3286163911610860551, guid: 85cf8dd1aad2ede4d82a875cbbcf61c0, type: 3}
+  closeBackground: {fileID: 3286163911610860551, guid: dadf1d38387231849b82ceb2e33022c4, type: 3}
+  obstacles: {fileID: 3286163911610860551, guid: 1e97c41e0a094634e986abcd2f5382b2, type: 3}
+  platform: {fileID: 3286163911610860551, guid: 6e9abba7497a2c84588f50b05e134471, type: 3}

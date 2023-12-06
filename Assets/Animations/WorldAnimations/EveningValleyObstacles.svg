@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 300" style="enable-background:new 0 0 100 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{display:inline;fill:#C69C6D;}
+	.st3{display:none;fill:url(#Sky_00000012455679173532798950000006694579219610842800_);}
+	.st4{display:inline;fill:#99BD9A;}
+	.st5{display:inline;opacity:0.75;fill:#FFFFFF;}
+	.st6{display:inline;opacity:0.15;enable-background:new    ;}
+	.st7{display:inline;fill:#B8AA99;}
+	.st8{display:inline;opacity:0.8;fill:#FFFFFF;}
+	.st9{display:inline;opacity:0.25;enable-background:new    ;}
+	.st10{fill:#0C4321;}
+	.st11{fill:#113D2C;}
+	.st12{fill:#1B6939;}
+	.st13{display:none;fill:#6B6139;}
+	.st14{display:inline;fill:url(#Sky_00000150083262645000428760000017617160950001007524_);}
+	.st15{fill:#A0AABF;}
+	.st16{opacity:0.75;fill:#FFFFFF;}
+	.st17{opacity:0.15;enable-background:new    ;}
+	.st18{fill:#B3B3B3;}
+	.st19{opacity:0.8;fill:#FFFFFF;}
+	.st20{opacity:0.25;enable-background:new    ;}
+	.st21{fill:#188642;}
+	.st22{display:inline;fill:#66CC66;}
+</style>
+<g id="GuideLines" class="st0">
+	<g id="Platform_00000087387232656310210650000015799613806028504734_" class="st1">
+		<rect id="Platform_00000169541835027623560570000004251963313638965908_" y="220" width="100" height="80"/>
+	</g>
+	
+		<rect id="DownObstacles_00000059303828549390023890000004041073479389804420_" x="40" y="179.7" class="st2" width="20" height="120"/>
+	<rect id="UpObstacles_00000007428063234211858770000008046308147434240920_" x="40" y="0.3" class="st2" width="20" height="120"/>
+</g>
+<g id="EveningValley">
+	
+		<linearGradient id="Sky_00000164482783146034730610000018182633153259689859_" gradientUnits="userSpaceOnUse" x1="150" y1="0.6383" x2="150" y2="300.6383">
+		<stop  offset="0" style="stop-color:#D786E0"/>
+		<stop  offset="0.2073" style="stop-color:#DB95BE"/>
+		<stop  offset="0.5758" style="stop-color:#E1AF87"/>
+		<stop  offset="0.8511" style="stop-color:#E5BE65"/>
+		<stop  offset="1" style="stop-color:#E6C458"/>
+	</linearGradient>
+	
+		<rect id="Sky_00000150101272940651717890000005715206939222757771_" y="0" style="display:none;fill:url(#Sky_00000164482783146034730610000018182633153259689859_);" width="300" height="300"/>
+	<g id="FarBackground_00000183227935153959858580000010461728112788847013_" class="st0">
+		<polyline class="st4" points="100,220 0,220 0,160.68 50,69.87 100,160.68 100,220 		"/>
+		<polyline class="st5" points="91.33,145.07 65.6,130.76 57.7,128.15 44.5,149.49 31.55,138.63 15.83,160.68 8.67,145.07 50,70 		
+			"/>
+		<polygon class="st6" points="69.8,220 50,69.87 100,160.68 77.5,204.87 		"/>
+	</g>
+	<g id="CloseBackground_00000156566762223402539860000015516973383711862173_" class="st0">
+		<polyline class="st7" points="100,220 0,220 50,160 		"/>
+		<polyline class="st8" points="75,190.05 65.6,184.33 57.7,183.29 44.5,191.82 37.99,190.05 25.5,196.29 25,190.05 50,160.05 		"/>
+		<polyline class="st9" points="100,220 69.8,220 50,160 		"/>
+	</g>
+	<g id="Obstacles">
+		<path class="st10" d="M0,329.7c40,0,40-150,40-150h20c0,0,0,150,41.11,150H0z"/>
+		<rect x="40" y="-29.7" class="st11" width="20" height="150"/>
+		<circle class="st12" cx="50" cy="-29.7" r="75"/>
+	</g>
+	<rect id="Platform_00000178927829254539707440000017005272093199123379_" y="220" class="st13" width="100" height="80"/>
+</g>
+<g id="MorningValley" class="st0">
+	
+		<linearGradient id="Sky_00000145026853436856365190000011820891336641785242_" gradientUnits="userSpaceOnUse" x1="150" y1="0.6383" x2="150" y2="300.6383">
+		<stop  offset="0" style="stop-color:#969CD6"/>
+		<stop  offset="0.5829" style="stop-color:#8383D9"/>
+		<stop  offset="1" style="stop-color:#7976DA"/>
+	</linearGradient>
+	
+		<rect id="Sky" y="0" style="display:inline;fill:url(#Sky_00000145026853436856365190000011820891336641785242_);" width="300" height="300"/>
+	<g id="FarBackground" class="st1">
+		<polyline class="st15" points="100,220 0,220 0,160.68 50,69.87 100,160.68 100,220 		"/>
+		<polyline class="st16" points="91.33,145.07 65.6,130.76 57.7,128.15 44.5,149.49 31.55,138.63 15.83,160.68 8.67,145.07 50,70 		
+			"/>
+		<polygon class="st17" points="69.8,220 50,69.87 100,160.68 77.5,204.87 		"/>
+	</g>
+	<g id="CloseBackground" class="st1">
+		<polyline class="st18" points="100,220 0,220 50,160 		"/>
+		<polyline class="st19" points="75,190.05 65.6,184.33 57.7,183.29 44.5,191.82 37.99,190.05 25.5,196.29 25,190.05 50,160.05 		
+			"/>
+		<polyline class="st20" points="100,220 69.8,220 50,160 		"/>
+	</g>
+	<g id="Obstacles_00000116212116694240132900000009013059662390771866_" class="st1">
+		<path class="st10" d="M0,329.7c40,0,40-150,40-150h20c0,0,0,150,41.11,150H0z"/>
+		<rect x="40" y="-29.7" class="st10" width="20" height="150"/>
+		<circle class="st21" cx="50" cy="-29.7" r="75"/>
+	</g>
+	<rect id="Platform_00000116194232001514044790000001895960694415793839_" y="220" class="st22" width="100" height="80"/>
+</g>
+</svg>

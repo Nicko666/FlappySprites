@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec458c278e7efe4a84f207a2dfc6eb3, type: 3}
+  m_Name: Static Data
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 8932503758012556447, guid: f204e1840b149464b96cf99b3745e6a4, type: 3}
+  jumpForce: 5
+  gravityScale: 1
+  raycastRadius: 0.5
+  playerThemes:
+  - {fileID: 11400000, guid: cf29ceef3d5686e4bb8cd8a3d68495e1, type: 2}
+  - {fileID: 11400000, guid: 2c167dc9089613a4c9ece5568ca73903, type: 2}
+  - {fileID: 11400000, guid: cdc3b0d331635ba4f9e666b723149e60, type: 2}
+  - {fileID: 11400000, guid: 2cc7885a6eeb55542a361cb19454fceb, type: 2}
+  worldThemes:
+  - {fileID: 11400000, guid: e1fadced94194234e9a3f927a47d48f9, type: 2}
+  - {fileID: 11400000, guid: e329f5d5b3bc5ed4b930f7c5a62dd224, type: 2}
+  - {fileID: 11400000, guid: 3daab9884f2689844aafa9a6fa354b0c, type: 2}
+  - {fileID: 11400000, guid: 8c2528521d09cd649a7e5d293f56d616, type: 2}
+  additionalGravity: 0
+  encryptionCodeWord: test

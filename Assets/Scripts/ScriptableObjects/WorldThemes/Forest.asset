@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2a622c6292ffb4db2090629faa60f8, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: 
+  sky: {fileID: 3286163911610860551, guid: 12782455fa9f8724cab19727a291e3f4, type: 3}
+  farBackground: {fileID: 3286163911610860551, guid: 68bca8abec31f2147845b84fddb5c8b5, type: 3}
+  closeBackground: {fileID: 3286163911610860551, guid: ecb0e7ee2d84ea14a85acab6e9bc994f, type: 3}
+  obstacles: {fileID: 3286163911610860551, guid: 3ce7897e778d1384dbb85fae14f959e6, type: 3}
+  platform: {fileID: 3286163911610860551, guid: 43399a4d53691ef4fa318b755af3fab8, type: 3}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2a622c6292ffb4db2090629faa60f8, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  sky: {fileID: 3286163911610860551, guid: 63601bc84c345f5448086a6a1566b1d6, type: 3}
+  farBackground: {fileID: 3286163911610860551, guid: 8cc74f2895e79f84d9c97bbedd0b2fae, type: 3}
+  closeBackground: {fileID: 0}
+  obstacles: {fileID: 3286163911610860551, guid: 876aecb313f98e24c90ea747ac8afc03, type: 3}
+  platform: {fileID: 3286163911610860551, guid: 3174b05ffafed434e8ec221e89542584, type: 3}

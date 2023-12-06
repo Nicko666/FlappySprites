@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1A1A1A;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#4D4D4D;}
+	.st2{fill:#C2B6B1;}
+	.st3{fill:#94A38B;}
+	.st4{fill:#856D64;}
+	.st5{fill:#A3928B;}
+	.st6{fill:none;}
+	.st7{fill:#73A8A5;}
+	.st8{fill:#ECECEC;}
+	.st9{fill:none;stroke:#4D4D4D;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g id="WeelsUncoloring">
+	<line class="st0" x1="15.2" y1="57.32" x2="26.68" y2="70.15"/>
+	<line class="st0" x1="29.67" y1="64.18" x2="26.68" y2="70.15"/>
+	<line class="st0" x1="65.42" y1="74.63" x2="90.31" y2="64.18"/>
+	<line class="st0" x1="46.01" y1="65.67" x2="65.42" y2="74.63"/>
+	<line class="st0" x1="65.42" y1="65.67" x2="65.42" y2="74.63"/>
+	<circle class="st1" cx="26.68" cy="70.15" r="2.99"/>
+	<circle class="st1" cx="65.42" cy="74.63" r="4.48"/>
+</g>
+<g id="PlaneUncoloring">
+	<circle class="st2" cx="93.29" cy="52.24" r="2.99"/>
+</g>
+<g id="PlaneColoring">
+	<circle class="st3" cx="60.94" cy="37.31" r="5.97"/>
+	<path class="st4" d="M93.29,40.3v23.88c0,1.65-1.34,2.99-2.99,2.99H34.61c-0.69,0-1.36-0.12-2.01-0.35l-16.86-6
+		c-1.84-0.66-3.24-2.17-3.76-4.05c-1.73-6.35-5.73-21.07-7.36-27.7c-0.47-1.88,0.96-3.7,2.9-3.7h16.86c2.36,0,4.5,1.39,5.46,3.54
+		l3.74,8.4h19.41c0,1.65,4.68,2.99,10.45,2.99s10.45-1.34,10.45-2.99h16.42C91.95,37.31,93.29,38.65,93.29,40.3z"/>
+	<path class="st2" d="M32.38,38.52H4.93c-0.66,0-1.2-0.54-1.2-1.2v0c0-0.66,0.54-1.2,1.2-1.2h27.45c0.66,0,1.2,0.54,1.2,1.2v0
+		C33.58,37.98,33.04,38.52,32.38,38.52z"/>
+	<path class="st5" d="M25.51,38.48H4.9c-0.65,0-1.17-0.52-1.17-1.17v0c0-0.65,0.52-1.17,1.17-1.17h20.61c0.65,0,1.17,0.52,1.17,1.17
+		v0C26.68,37.96,26.16,38.48,25.51,38.48z"/>
+	<line class="st6" x1="90.31" y1="37.31" x2="90.31" y2="67.17"/>
+	<path class="st7" d="M90.31,67.17L90.31,67.17c1.65,0,2.99-1.34,2.99-2.99V40.3c0-1.65-1.34-2.99-2.99-2.99h0V67.17z"/>
+	<path class="st8" d="M73.88,37.31c0,1.65-4.68,2.99-10.45,2.99s-10.45-1.34-10.45-2.99c0,0,4.21,1.8,10.45,1.8
+		S73.88,37.31,73.88,37.31z"/>
+</g>
+<g id="WingsUncoloring">
+	<line class="st9" x1="60.94" y1="22.38" x2="60.94" y2="65.67"/>
+</g>
+<g id="WingsColoring">
+	<path class="st5" d="M47.5,23.88h26.87c0.82,0,1.49-0.67,1.49-1.49v0c0-0.82-0.67-1.49-1.49-1.49H47.5c-0.82,0-1.49,0.67-1.49,1.49
+		v0C46.01,23.21,46.68,23.88,47.5,23.88z"/>
+	<path class="st5" d="M47.5,67.17h26.87c0.82,0,1.49-0.67,1.49-1.49l0,0c0-0.82-0.67-1.49-1.49-1.49H47.5
+		c-0.82,0-1.49,0.67-1.49,1.49l0,0C46.01,66.5,46.68,67.17,47.5,67.17z"/>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2a622c6292ffb4db2090629faa60f8, type: 3}
+  m_Name: MorningValley
+  m_EditorClassIdentifier: 
+  sky: {fileID: 3286163911610860551, guid: 0c720dcae6e7d1446a1385b51ecaf5a5, type: 3}
+  farBackground: {fileID: 3286163911610860551, guid: 917313f2ab6cfa04a8c1bbe5e2a085f9, type: 3}
+  closeBackground: {fileID: 3286163911610860551, guid: d93b41346004dd34f8c948df83a4dc83, type: 3}
+  obstacles: {fileID: 3286163911610860551, guid: 75b55987b955982449a07379c970d795, type: 3}
+  platform: {fileID: 3286163911610860551, guid: 9ccfe9ea3f4109e47b39bec999bbf972, type: 3}
