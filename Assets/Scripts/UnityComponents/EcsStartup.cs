@@ -28,9 +28,13 @@ public class EcsStartup : MonoBehaviour
 
         updateSystems
             .Add(new PlayerInitSystem())
+            .Add(new PlayerCollisionSystem())
+            .Add(new PlayerAnimationSystem())
+            .Add(new PlayerMoveSystem())
+            //.Add(new PlayerGravityMultiplyerSystem())
+            .Add(new PlayerThemeSystem())
             .Add(new CurrentPointsSystem())
             .Add(new RecordPointSystem())
-            .Add(new PlayerThemeSystem())
             .Add(new WorldThemeSystem())
             .Inject(staticData)
             .Inject(sceneData)
@@ -41,7 +45,6 @@ public class EcsStartup : MonoBehaviour
 
         fixedUpdateSystems
             .Add(new TimeControlSystem())
-            .Add(new PlayerLifeSystem())
             .Add(new ObstacleInitSystem())
             .Inject(staticData)
             .Inject(sceneData)

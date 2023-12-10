@@ -20,7 +20,7 @@ public class PlayerInitSystem : IEcsInitSystem
         player.animator = playerGO.GetComponent<Animator>();
         player.entity = playerEntity;
         player.playerThemes = playerGO.GetComponent<PlayerThemesAddressables>();
-
+        player.playerCollision = playerGO.GetComponent<PlayerCollision>();
     }
 
 }

@@ -8,4 +8,5 @@ public struct Player
     public Rigidbody2D rigidbody;
     public Animator animator;
     public PlayerThemesAddressables playerThemes;
+    public PlayerCollision playerCollision;
 }

@@ -34,11 +34,11 @@ public class WorldThemeSystem : IEcsInitSystem
     {
         sceneData.sky.sprite = staticData.worldThemes[index].SkySprite;
         
-        foreach (var spriteRenderer in sceneData.farBackground.spriteRenderers)
+        foreach (var spriteRenderer in sceneData.farBackground)
         {
             spriteRenderer.sprite = staticData.worldThemes[index].FarBackground;
         }
-        foreach (var spriteRenderer in sceneData.closeBackground.spriteRenderers)
+        foreach (var spriteRenderer in sceneData.closeBackground)
         {
             spriteRenderer.sprite = staticData.worldThemes[index].CloseBackground;
         }
@@ -46,7 +46,7 @@ public class WorldThemeSystem : IEcsInitSystem
         {
             spriteRenderer.sprite = staticData.worldThemes[index].Obstacles;
         }
-        foreach (var spriteRenderer in sceneData.platforms.spriteRenderers)
+        foreach (var spriteRenderer in sceneData.platforms)
         {
             spriteRenderer.sprite = staticData.worldThemes[index].Platform;
         }

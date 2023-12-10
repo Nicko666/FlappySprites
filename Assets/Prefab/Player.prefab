@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 4210410754970399560}
   - component: {fileID: 6124334579445672822}
   - component: {fileID: 4049816330311641631}
+  - component: {fileID: 7943768870820874855}
+  - component: {fileID: 2029363611009321499}
   - component: {fileID: 1422329854334722618}
   m_Layer: 0
   m_Name: Player
@@ -213,7 +215,7 @@ Animator:
   m_GameObject: {fileID: 8932503758012556447}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d9cc20bd43d940348988b9b770218c4e, type: 2}
+  m_Controller: {fileID: 9100000, guid: d3771e6151198cc4ea10a71449505dfe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -225,6 +227,61 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &7943768870820874855
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932503758012556447}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.49999997
+--- !u!114 &2029363611009321499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932503758012556447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19d6e3e1e8ec114faca86e58dc8120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider2d: {fileID: 7943768870820874855}
+  onCheckpoint:
+    m_PersistentCalls:
+      m_Calls: []
+  onObstacle:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1422329854334722618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,20 +294,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511ea38a5e510c14297baca146afee06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerThemesAssets:
-  - m_AssetGUID: cf29ceef3d5686e4bb8cd8a3d68495e1
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  - m_AssetGUID: 2c167dc9089613a4c9ece5568ca73903
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  - m_AssetGUID: cdc3b0d331635ba4f9e666b723149e60
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  - m_AssetGUID: 2cc7885a6eeb55542a361cb19454fceb
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 1

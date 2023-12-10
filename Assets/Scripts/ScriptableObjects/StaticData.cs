@@ -11,7 +11,7 @@ public class StaticData : ScriptableObject
     public PlayerTheme[] playerThemes;
     public WorldTheme[] worldThemes;
 
-    public float additionalGravity; //to speed up falling
+    public float playerGravityMultiplyer; //to speed up falling
 
     public string encryptionCodeWord;
 }

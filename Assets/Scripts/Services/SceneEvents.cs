@@ -8,6 +8,7 @@ public class SceneEvents : MonoBehaviour
     public UnityEvent onPlay;
     public UnityEvent onEndGame;
     public UnityEvent onAddPoint;
+    public UnityEvent onJump;
     public UnityEvent<int> onPlayerThemeInput;
     public UnityEvent<int> onWorldThemeInput;
 
@@ -26,6 +27,10 @@ public class SceneEvents : MonoBehaviour
     public void AddPointNotify()
     {
         onAddPoint?.Invoke();
+    }
+    public void JumpNotify()
+    {
+        onJump?.Invoke();
     }
     public void PlayerThemeInputNotify(int value)
     {

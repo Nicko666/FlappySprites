@@ -2,23 +2,35 @@ using UnityEngine;
 
 public class MovingTransforms : MonoBehaviour
 {
-    public SpriteRenderer[] spriteRenderers;
+    public Transform[] rectTransform;
     public float speed;
     float platformsDrawDistance = 0;
 
     private void Start()
     {
-        platformsDrawDistance = spriteRenderers.Length / -2f;
+        platformsDrawDistance = rectTransform.Length / -2f;
     }
+
+    //private void Update()
+    //{
+    //    for (int i = 0; i < rectTransform.Length; i++)
+    //    {
+    //        rectTransform[i].localPosition += Vector3.left * (speed * Time.deltaTime);
+
+    //        if (rectTransform[i].localPosition.x < platformsDrawDistance)
+    //            rectTransform[i].localPosition += Vector3.right * rectTransform.Length;
+    //    }
+    //}
 
     private void FixedUpdate()
     {
-        for (int i = 0; i < spriteRenderers.Length; i++)
+        for (int i = 0; i < rectTransform.Length; i++)
         {
-            spriteRenderers[i].transform.localPosition += Vector3.left * (speed * Time.fixedDeltaTime);
+            rectTransform[i].localPosition += Vector3.left * (speed * Time.fixedDeltaTime);
 
-            if (spriteRenderers[i].transform.localPosition.x < platformsDrawDistance)
-                spriteRenderers[i].transform.localPosition += Vector3.right * spriteRenderers.Length;
+            if (rectTransform[i].localPosition.x < platformsDrawDistance)
+                rectTransform[i].localPosition += Vector3.right * rectTransform.Length;
         }
     }
+
 }
