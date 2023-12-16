@@ -22,7 +22,7 @@ public class PlayerCollision : MonoBehaviour
         {
             onObstacle?.Invoke();
         }
-        if (collision.gameObject.tag == "Point" & collision.gameObject != lastPoint)
+        if (collision.gameObject.tag == "Point" && collision.gameObject != lastPoint)
         {
             lastPoint = collision.gameObject;
             onCheckpoint?.Invoke();
