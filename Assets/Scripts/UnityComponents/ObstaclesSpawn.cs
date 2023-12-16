@@ -22,9 +22,6 @@ public class ObstaclesSpawn : MonoBehaviour
 
     private void OnEnable()
     {
-        //foreach (var obstacle in obstacles)
-        //    obstacle.gameObject.SetActive(false);
-        
         timer = 0;
     }
 

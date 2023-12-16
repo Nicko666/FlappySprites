@@ -13,39 +13,29 @@ public class EcsStartup : MonoBehaviour
     private LocalData localData;
 
     private EcsWorld ecsWorld;
+    private EcsSystems initSystems;
     private EcsSystems updateSystems;
-    private EcsSystems fixedUpdateSystems;
 
     private void Start()
     {
         ecsWorld = new EcsWorld();
         updateSystems = new EcsSystems(ecsWorld);
-        fixedUpdateSystems = new EcsSystems(ecsWorld);
+        initSystems = new EcsSystems(ecsWorld);
         RuntimeData runtimeData = new RuntimeData();
 
         //load
         Load();
 
-        updateSystems
+        initSystems
             .Add(new PlayerInitSystem())
             .Add(new PlayerCollisionSystem())
-            .Add(new PlayerAnimationSystem())
             .Add(new PlayerMoveSystem())
-            //.Add(new PlayerGravityMultiplyerSystem())
             .Add(new PlayerThemeSystem())
             .Add(new CurrentPointsSystem())
             .Add(new RecordPointSystem())
             .Add(new WorldThemeSystem())
-            .Inject(staticData)
-            .Inject(sceneData)
-            .Inject(sceneEvents)
-            .Inject(settingsData)
-            .Inject(localData)
-            .Inject(runtimeData);
-
-        fixedUpdateSystems
-            .Add(new TimeControlSystem())
             .Add(new ObstacleInitSystem())
+            .Add(new TimeControlSystem())
             .Inject(staticData)
             .Inject(sceneData)
             .Inject(sceneEvents)
@@ -53,8 +43,13 @@ public class EcsStartup : MonoBehaviour
             .Inject(localData)
             .Inject(runtimeData);
 
+        updateSystems
+            .Add(new PlayerAnimationSystem())
+            //.Add(new PlayerGravityMultiplyerSystem())
+            .Inject(sceneEvents);
+
+        initSystems.Init();
         updateSystems.Init();
-        fixedUpdateSystems.Init();
 
         //start game
         sceneEvents.MenuNotify();
@@ -64,11 +59,6 @@ public class EcsStartup : MonoBehaviour
     private void Update()
     {
         updateSystems?.Run();
-    }
-
-    private void FixedUpdate()
-    {
-        fixedUpdateSystems?.Run();
     }
 
     private void OnApplicationFocus(bool focus)
@@ -87,11 +77,11 @@ public class EcsStartup : MonoBehaviour
 
     private void OnDestroy()
     {
+        initSystems?.Destroy();
+        initSystems = null;
+
         updateSystems?.Destroy();
         updateSystems = null;
-
-        fixedUpdateSystems?.Destroy();
-        fixedUpdateSystems = null;
         
         ecsWorld?.Destroy();
         ecsWorld = null;

@@ -1,5 +1,4 @@
 ﻿using Leopotam.Ecs;
-using UnityEngine;
 
 public class PlayerThemeSystem : IEcsInitSystem
 {
@@ -38,9 +37,8 @@ public class PlayerThemeSystem : IEcsInitSystem
         foreach (var i in playerFilter)
         {
             ref var player = ref playerFilter.Get1(i);
-            //player.playerThemes.SetPlayerTheme(player, index);
-            player.animator.runtimeAnimatorController = staticData.playerThemes[index].AnimatorController;
 
+            player.animator.runtimeAnimatorController = staticData.playerThemes[index].AnimatorController;
         }
     }
 
