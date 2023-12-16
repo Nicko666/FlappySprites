@@ -12,27 +12,30 @@ public class RecordPointSystem : IEcsInitSystem
 
     public void Init()
     {
-        sceneEvents.onEndGame.AddListener(SetMaxPoints);
+        sceneEvents.onPlay.AddListener(OnStart);
+        sceneEvents.onEndGame.AddListener(OnEnd);
 
-        message = "";
+        OnStart();
+    }
+
+
+    void OnStart()
+    {
         oldRecord = localData.personalRecord;
+        message = " ";
 
         ShowRecords();
     }
 
-    void SetMaxPoints()
+    void OnEnd()
     {
-        oldRecord = localData.personalRecord;
-
         if (runtimeData.currentPoints > localData.personalRecord)
         {
             SavePersonalRecord(runtimeData.currentPoints);
             message = "New personal record!";
         }
-        else
-        {
-            message = "";
-        }
+        
+        SaveGlobalRecord(runtimeData.currentPoints);
 
         ShowRecords();
     }
@@ -45,11 +48,9 @@ public class RecordPointSystem : IEcsInitSystem
         foreach (var text in sceneData.oldPersonalRecordText)
             text.text = oldRecord.ToString();
 
-        //foreach (var text in sceneData.globalRecordText)
-        //    text.text = runtimeData.globalRecordText.ToString();
-
         foreach (var text in sceneData.endGameMessage)
             text.text = message;
+
     }
 
     void SavePersonalRecord(int value)

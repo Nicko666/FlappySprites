@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9122879070018869255}
   - component: {fileID: 6376959229103440256}
   - component: {fileID: 818714131017511255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SVG_Square (Obstacles)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -54,6 +54,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -191,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1029928683955628410}
   - component: {fileID: 5457692334921138519}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointColider
   m_TagString: Point
   m_Icon: {fileID: 0}

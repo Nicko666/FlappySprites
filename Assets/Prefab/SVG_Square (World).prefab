@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1827468562229170382}
   - component: {fileID: 2772535577451227970}
   m_Layer: 0
-  m_Name: SVG_Square (CloseBackground)
+  m_Name: SVG_Square (World)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
