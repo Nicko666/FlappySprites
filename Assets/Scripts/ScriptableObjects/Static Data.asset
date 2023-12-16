@@ -26,5 +26,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e329f5d5b3bc5ed4b930f7c5a62dd224, type: 2}
   - {fileID: 11400000, guid: 3daab9884f2689844aafa9a6fa354b0c, type: 2}
   - {fileID: 11400000, guid: 8c2528521d09cd649a7e5d293f56d616, type: 2}
-  additionalGravity: 0
-  encryptionCodeWord: test
+  playerGravityMultiplyer: 0
+  encryptionCodeWord: blablabla
