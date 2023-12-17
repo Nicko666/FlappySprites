@@ -1,4 +1,5 @@
 ﻿using Leopotam.Ecs;
+using System.Text;
 
 public class CurrentPointsSystem : IEcsInitSystem
 {
@@ -6,10 +7,14 @@ public class CurrentPointsSystem : IEcsInitSystem
     private SceneEvents sceneEvents;
     private RuntimeData runtimeData;
 
+    StringBuilder builder;
+
     public void Init()
     {
         sceneEvents.onPlay.AddListener(ZeroPoints);
         sceneEvents.onAddPoint.AddListener(AddPoint);
+
+        builder = new StringBuilder(10);
     }
 
     void ZeroPoints()
@@ -28,8 +33,11 @@ public class CurrentPointsSystem : IEcsInitSystem
 
     void DisplayPoints()
     {
+        builder.Length = 0;
+        builder.Append(runtimeData.currentPoints);
+
         foreach (var points in sceneData.currentPointsTexts)
-            points.text = runtimeData.currentPoints.ToString();
+            points.text = builder.ToString();
     }
 
 
