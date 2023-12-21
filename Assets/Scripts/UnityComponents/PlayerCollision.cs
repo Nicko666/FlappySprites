@@ -8,12 +8,12 @@ public class PlayerCollision : MonoBehaviour
     public UnityEvent onCheckpoint;
     public UnityEvent onObstacle;
 
-    GameObject lastPoint;
+    //GameObject lastPoint;
 
     private void OnEnable()
     {
         collider2d.enabled = true;
-        lastPoint = null;
+        //lastPoint = null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,9 +22,10 @@ public class PlayerCollision : MonoBehaviour
         {
             onObstacle?.Invoke();
         }
-        if (collision.gameObject.tag == "Point" && collision.gameObject != lastPoint)
+        //if (collision.gameObject.tag == "Point" && collision.gameObject != lastPoint)
+        if (collision.gameObject.tag == "Point")
         {
-            lastPoint = collision.gameObject;
+            //lastPoint = collision.gameObject;
             onCheckpoint?.Invoke();
         }
     }
