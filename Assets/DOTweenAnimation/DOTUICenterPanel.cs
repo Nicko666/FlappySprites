@@ -15,14 +15,14 @@ public class DOTUICenterPanel : DOTUI
 
     public override void Close()
     {
-        rectTransform.DOScale(Vector3.zero, DOTUISystem.speed).SetUpdate(true);
-        canvasGroup.DOFade(0, DOTUISystem.speed).SetUpdate(true);
+        rectTransform.DOScale(Vector3.zero, DOTUISystem.duration).SetUpdate(true);
+        canvasGroup.DOFade(0, DOTUISystem.duration).SetUpdate(true);
     }
 
     public override void Open()
     {
-        rectTransform.DOScale(Vector3.one, DOTUISystem.speed).SetUpdate(true);
-        canvasGroup.DOFade(1, DOTUISystem.speed).SetUpdate(true);
+        rectTransform.DOScale(Vector3.one, DOTUISystem.duration).SetUpdate(true);
+        canvasGroup.DOFade(1, DOTUISystem.duration).SetUpdate(true);
     }
 
 }

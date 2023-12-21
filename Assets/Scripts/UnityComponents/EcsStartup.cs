@@ -6,6 +6,7 @@ public class EcsStartup : MonoBehaviour
     public StaticData staticData;
     public SceneData sceneData;
     public SceneEvents sceneEvents;
+    public GooglePlayData googlePlayData;
 
     private FileDataHandler<SettingsData> settingsDataHandler;
     private SettingsData settingsData;
@@ -39,6 +40,7 @@ public class EcsStartup : MonoBehaviour
             .Inject(staticData)
             .Inject(sceneData)
             .Inject(sceneEvents)
+            .Inject(googlePlayData)
             .Inject(settingsData)
             .Inject(localData)
             .Inject(runtimeData);

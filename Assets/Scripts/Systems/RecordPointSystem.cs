@@ -1,4 +1,5 @@
 ﻿using Leopotam.Ecs;
+using UnityEngine;
 
 public class RecordPointSystem : IEcsInitSystem
 {
@@ -6,6 +7,7 @@ public class RecordPointSystem : IEcsInitSystem
     private SceneEvents sceneEvents;
     private RuntimeData runtimeData;
     private LocalData localData;
+    private GooglePlayData googlePlayData;
 
     string message;
     int oldRecord;
@@ -60,7 +62,8 @@ public class RecordPointSystem : IEcsInitSystem
 
     void SaveGlobalRecord(int value)
     {
-
+        googlePlayData.LiderboardGlobalPoints(value);
+        Debug.Log("Global Record Saving ended");
     }
 
 }

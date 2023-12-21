@@ -13,11 +13,11 @@ public class DOTUIDownPanel : DOTUI
 
     public override void Close()
     {
-        rectTransform.DOPivotY(1, DOTUISystem.speed).SetUpdate(true);
+        rectTransform.DOPivotY(1, DOTUISystem.duration).SetUpdate(true);
     }
 
     public override void Open()
     {
-        rectTransform.DOPivotY(0, DOTUISystem.speed).SetUpdate(true);
+        rectTransform.DOPivotY(0, DOTUISystem.duration).SetUpdate(true);
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DOTUISystem : MonoBehaviour
 {
-    public static float speed = 0;
+    public static float duration = 0;
     
     [SerializeField] float animationSpeed;
 
@@ -16,7 +16,7 @@ public class DOTUISystem : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        speed = animationSpeed;
+        duration = animationSpeed;
     }
 
 }

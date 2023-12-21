@@ -7,7 +7,7 @@ public class DOTUISpinAnimation : MonoBehaviour
 
     public void Spin(int value)
     {
-        rectTransform.DOLocalRotate(Vector3.forward * value, DOTUISystem.speed, RotateMode.FastBeyond360).SetUpdate(true);
+        rectTransform.DOLocalRotate(Vector3.forward * value, DOTUISystem.duration, RotateMode.FastBeyond360).SetUpdate(true);
     }
 
 }
