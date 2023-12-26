@@ -1,4 +1,5 @@
 using Leopotam.Ecs;
+using System.Collections;
 using UnityEngine;
 
 public class EcsStartup : MonoBehaviour
@@ -55,6 +56,17 @@ public class EcsStartup : MonoBehaviour
 
         //start game
         sceneEvents.MenuNotify();
+
+        OnFirstFrame();
+
+    }
+
+    IEnumerator OnFirstFrame()
+    {
+        yield return new WaitForEndOfFrame();
+        
+        //init google play
+        googlePlayData.Init();
 
     }
 

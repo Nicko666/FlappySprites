@@ -1,32 +1,43 @@
 using UnityEngine;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
+using System;
 
 public class GooglePlayData : MonoBehaviour
 {
+    [SerializeField] CustomLog customLog;
+
     bool connectedToGooglePlay;
 
-    private void Awake()
-    {
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
-    }
 
-    private void Start()
+    public void Init()
     {
-        LogInGooglePlay();
+        try
+        {
+            LogInGooglePlay();
+        }
+        catch (Exception e)
+        {
+            customLog.Log(e.Message);
+        }
     }
 
     void LogInGooglePlay()
     {
+        PlayGamesPlatform.DebugLogEnabled = true;
+        PlayGamesPlatform.Activate();
+
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
-    
+
     }
 
-    void ProcessAuthentication(SignInStatus signInStatus)
+    void ProcessAuthentication(SignInStatus status)
     {
-        connectedToGooglePlay = (signInStatus == SignInStatus.Success);
-        
+        if (status == SignInStatus.Success)
+            connectedToGooglePlay = true;
+        else
+            connectedToGooglePlay = false;
+
     }
 
     public void LiderboardGlobalPoints(int points)
@@ -38,16 +49,24 @@ public class GooglePlayData : MonoBehaviour
     void LiderboardUpdate(bool success)
     {
         if (success)
-            Debug.Log("Updated Leaderboard");
-        else
-            Debug.Log("Unable to update Leaderboard");
+            Debug.Log("Leaderboard sucsess");
+        //else
+        //    Debug.Log("Unable to update Leaderboard");
     
     }
 
     public void ShowLiderboardGlobalPoints()
     {
-        if(!connectedToGooglePlay) LogInGooglePlay();
-        Social.ShowLeaderboardUI();
+        try
+        {
+            if (!connectedToGooglePlay) LogInGooglePlay();
+            Social.ShowLeaderboardUI();
+        }
+        catch (Exception e)
+        {
+            customLog.Log(e.Message);
+        }
+        
     }
 
 

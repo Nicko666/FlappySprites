@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "com.leopotam.ecs": {
-      "version": "file:LeoECS",
+      "version": "file:C:/Users/Nick/Desktop/Unity Projects/[For Unity]/ecs-master",
       "depth": 0,
-      "source": "embedded",
+      "source": "local",
       "dependencies": {}
     },
     "com.unity.2d.animation": {
