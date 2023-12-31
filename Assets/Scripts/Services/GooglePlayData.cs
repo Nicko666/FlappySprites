@@ -42,7 +42,8 @@ public class GooglePlayData : MonoBehaviour
 
     public void LiderboardGlobalPoints(int points)
     {
-        Social.ReportScore(points, GPGSIds.leaderboard_global_points, LiderboardUpdate);
+        if (connectedToGooglePlay)
+            Social.ReportScore(points, GPGSIds.leaderboard_global_points, LiderboardUpdate);
     
     }
 

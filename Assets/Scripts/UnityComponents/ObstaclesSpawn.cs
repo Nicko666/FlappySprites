@@ -40,7 +40,10 @@ public class ObstaclesSpawn : MonoBehaviour
         {
             if (!obstacle.gameObject.activeSelf) continue;
 
+            //Vector2 currentPosition = obstacle.transform.localPosition;
+            //Vector2 newPosition = currentPosition + (Vector2.left * speed);
             obstacle.transform.localPosition += Vector3.left * (speed * Time.fixedDeltaTime);
+            //obstacle.transform.localPosition = Vector2.Lerp(currentPosition, newPosition, 0.01f);
         }
     }
 

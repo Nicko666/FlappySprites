@@ -20,6 +20,8 @@ public class EcsStartup : MonoBehaviour
 
     private void Start()
     {
+        Application.targetFrameRate = 60;
+
         ecsWorld = new EcsWorld();
         updateSystems = new EcsSystems(ecsWorld);
         initSystems = new EcsSystems(ecsWorld);
@@ -57,7 +59,7 @@ public class EcsStartup : MonoBehaviour
         //start game
         sceneEvents.MenuNotify();
 
-        OnFirstFrame();
+        StartCoroutine(OnFirstFrame());
 
     }
 
