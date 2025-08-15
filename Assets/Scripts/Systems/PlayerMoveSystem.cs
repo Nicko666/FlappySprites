@@ -32,7 +32,7 @@ public class PlayerMoveSystem : IEcsInitSystem
             ref var player = ref playerFilter.Get1(i);
 
             player.rigidbody.gravityScale = 0;
-            player.rigidbody.velocity = Vector3.zero;
+            player.rigidbody.linearVelocity = Vector3.zero;
             player.transform.position = sceneData.playerSpawnPoint.position;
         }
     }
@@ -43,7 +43,7 @@ public class PlayerMoveSystem : IEcsInitSystem
         {
             ref var player = ref playerFilter.Get1(i);
 
-            player.rigidbody.velocity = Vector2.up * staticData.jumpForce;
+            player.rigidbody.linearVelocity = Vector2.up * staticData.jumpForce;
         }
     }
     

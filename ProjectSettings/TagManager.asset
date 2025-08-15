@@ -3,14 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Obstacle
-  - Point
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Raycast
+  - 
   - Water
   - UI
   - 
@@ -43,60 +41,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Sky
-    uniqueID: 3118451669
-    locked: 0
-  - name: FarBackground
-    uniqueID: 1203639553
-    locked: 0
-  - name: CloseBackground
-    uniqueID: 2196036637
-    locked: 0
-  - name: Player
-    uniqueID: 4075549743
-    locked: 0
-  - name: Obstecles
-    uniqueID: 1646208751
-    locked: 0
-  - name: Platforms
-    uniqueID: 1164505705
-    locked: 0
-  - name: Foreground
-    uniqueID: 11913605
-    locked: 0
-  - name: UI
-    uniqueID: 1111792249
-    locked: 0
-  m_RenderingLayers:
-  - Default
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 

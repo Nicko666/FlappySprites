@@ -12,8 +12,8 @@ public class PlayerGravityMultiplyerSystem : IEcsRunSystem
         {
             ref var player = ref playerFilter.Get1(i);
 
-            if (player.rigidbody.velocity.y < 0)
-                player.rigidbody.velocity *= Vector2.down * staticData.playerGravityMultiplyer;
+            if (player.rigidbody.linearVelocity.y < 0)
+                player.rigidbody.linearVelocity *= Vector2.down * staticData.playerGravityMultiplyer;
         }
     }
 }

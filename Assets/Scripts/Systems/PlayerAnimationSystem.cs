@@ -17,7 +17,7 @@ public class PlayerAnimationSystem : IEcsInitSystem, IEcsRunSystem
         {
             ref var player = ref playerFilter.Get1(i);
 
-            player.animator.SetFloat("moveY", player.rigidbody.velocityY);
+            player.animator.SetFloat("moveY", player.rigidbody.linearVelocityY);
         }
     }
 
