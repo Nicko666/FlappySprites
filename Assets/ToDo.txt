@@ -1,0 +1,3 @@
++ Personal Record in Menu
+- Move Speed Increase to Controller?
+- Set camera and ui scale for all resolutions

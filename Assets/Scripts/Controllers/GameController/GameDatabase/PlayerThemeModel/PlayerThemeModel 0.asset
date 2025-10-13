@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96c365634c40234099db19472e8d735, type: 3}
+  m_Name: PlayerThemeModel 0
+  m_EditorClassIdentifier: 
+  _id: 0
+  _icon: {fileID: 21300000, guid: ddab35e0fd5acbe4c88c9bd86236b30a, type: 3}
+  _runtimeAnimatorController: {fileID: 22100000, guid: 927a1e57e6cb4dd4dba11b58d7cd937c, type: 2}

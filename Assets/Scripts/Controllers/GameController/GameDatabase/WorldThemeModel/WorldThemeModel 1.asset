@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53e72a849e336944a5616de69529666, type: 3}
+  m_Name: WorldThemeModel 1
+  m_EditorClassIdentifier: 
+  _id: 1
+  _icon: {fileID: 21300000, guid: 9b1c71c305ef0a74a98ff05ccd0e90c6, type: 3}
+  _spriteLibraryAsset: {fileID: 7108339969198208228, guid: c8c14e26b75eda346b0dc2fad91c59f4, type: 3}
