@@ -37,9 +37,6 @@ public class GameController : Controller
         _gamePresenter.onInputRecords += OutputRecords;
         _gamePresenter.onInputAddPointsModel += AddCurrentPointsModel;
         _gamePresenter.onClearCurrentPointsModel += ClearCurrentPointsModel;
-        _loadingPresenter.onInputLoadDatabase += _gameDatabaseController.LoadDatabase;
-        _loadingPresenter.onInputLoadData += LoadDataModel;
-        _loadingPresenter.onInputSaveData += SaveDataModel;
         _gamePointsController.onRecordPointsModelChanged += OutputRecordPointsModel;
         _gamePointsController.onCurrentPointsModelChanged += OutputCurrentPointsModel;
         _gamePointsController.onNewRecord += OutputNewRecord;
@@ -54,9 +51,6 @@ public class GameController : Controller
         _gamePresenter.onInputRecords -= OutputRecords;
         _gamePresenter.onInputAddPointsModel -= AddCurrentPointsModel;
         _gamePresenter.onClearCurrentPointsModel -= ClearCurrentPointsModel;
-        _loadingPresenter.onInputLoadDatabase -= _gameDatabaseController.LoadDatabase;
-        _loadingPresenter.onInputLoadData -= LoadDataModel;
-        _loadingPresenter.onInputSaveData -= SaveDataModel;
         _gamePointsController.onRecordPointsModelChanged -= OutputRecordPointsModel;
         _gamePointsController.onCurrentPointsModelChanged -= OutputCurrentPointsModel;
         _gamePointsController.onNewRecord -= OutputNewRecord;
@@ -102,8 +96,10 @@ public class GameController : Controller
     private void SetPlayerThemeModel(PlayerThemeModel playerThemeModel) =>
         _playerThemeController.SetValue(playerThemeModel);
 
-    private void LoadDataModel()
+    protected override void LoadData()
     {
+        _gameDatabaseController.LoadDatabase();
+
         _gameSettingsModel = _gameSettingsController.Load();
         _gameSettingsModel ??= new();
 
@@ -114,8 +110,10 @@ public class GameController : Controller
         _gameProgressModel ??= new();
 
         _gamePointsController.SetRecordPointsModel(_gameProgressModel.personalRecord);
+
+        base.LoadData();
     }
-    private void SaveDataModel()
+    protected override void SaveData()
     {
         _gameSettingsModel.playerThemeIndex = _playerThemeController.GetValue().ID;
         _gameSettingsModel.worldThemeIndex = _worldThemeController.GetValue().ID;
@@ -125,5 +123,7 @@ public class GameController : Controller
         _gameProgressModel.personalRecord = _gamePointsController.GetRecordPointsModel();
         
         _gameProgressController.Save(_gameProgressModel);
+
+        base.SaveData();
     }
 }
